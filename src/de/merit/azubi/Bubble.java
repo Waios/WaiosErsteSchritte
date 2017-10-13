@@ -25,14 +25,14 @@ public class Bubble {
         int arr[] = {33, 12, 54, 38, 77, 2, 10, 43, 8, 19, 47, 32, 99, 1, 7};
 
         for (int s = 0; s < arr.length; s++) {
-            System.out.println(arr[s] + " , ");
+            System.out.print(arr[s] + " , ");
 
         }
-        System.out.println();
-        System.out.println();
+        System.out.println("\n");
+        bubblesort(arr);
 
         for (int s = 0; s < arr.length; s++) {
-            System.out.println(arr[s] + " , ");
+            System.out.print(arr[s] + " , ");
 
 
         }
