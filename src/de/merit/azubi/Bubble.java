@@ -22,7 +22,7 @@ public class Bubble {
 
     public static void main(String[] args) {
 
-        int arr[] = {33, 12, 54, 38, 77, 2, 10, 43, 8, 19};
+        int arr[] = {33, 12, 54, 38, 77, 2, 10, 43, 8, 19, 47, 32, 99, 1, 7};
 
         for (int s = 0; s < arr.length; s++) {
             System.out.println(arr[s] + " , ");
