@@ -1,4 +1,4 @@
-Hi Michael,
+Hi Michael und Christiane
 wir sollten noch Christiane einladen.
 
 Das finde ich gut!
