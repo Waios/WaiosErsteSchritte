@@ -8,3 +8,5 @@ bzw. ueber GitHub einladen
 ich hab ihr eine mail geschrieben
 
 das finde ich prima!
+
+Soll ich auch noch die Emily einladen?
