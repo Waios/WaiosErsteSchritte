@@ -1,12 +1,11 @@
 package de.merit.azubi;
 
 
-
 public class SortierenTeams {
 
     public static void main(String[] args) {
 
-        String [] [] teams = {
+        String[][] teams = {
                 {"Steffen", "Andreas", "Tobias", "Anna", "Tom"},
                 {"Thomas", "Michael", "Xaver", "Christiane", "Reza", "Waios"},
                 {"Gregor", "Anne", "Robbi", "Kalle", "Paul"},
@@ -21,7 +20,7 @@ public class SortierenTeams {
 
         }
 
-        String [][] team = new String [3] [5];
+        String[][] team = new String[3][5];
 
         team[0][0] = "Steffen";
         team[0][1] = "Andreas";
@@ -44,7 +43,7 @@ public class SortierenTeams {
         for (int zeile = 0; zeile < 4; zeile++) {
             System.out.println("}\nTeam " + zeile);
 
-            for (int zaehler = 0; zaehler < teams[zeile].length; zaehler++);{
+            for (int zaehler = 0; zaehler < teams[zeile].length; zaehler++) {
 
                 for (int position = 1; position < (teams[zeile].length - zaehler); position++) {
                     if ((teams[zeile][position]).compareTo(teams[zeile][position - 1]) < 0) {
@@ -55,9 +54,9 @@ public class SortierenTeams {
 
                 }
             }
-         for (int x = 0; x < teams[zeile].length; x++) {
-             System.out.println(teams[zeile][x]);
-         }
+            for (int x = 0; x < teams[zeile].length; x++) {
+                System.out.println(teams[zeile][x]);
+            }
 
         }
     }
