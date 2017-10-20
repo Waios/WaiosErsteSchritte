@@ -7,4 +7,4 @@ bzw. ueber GitHub einladen
 
 ich hab ihr eine mail geschrieben
 
-Das ist meine Aenderung!
+das finde ich prima!
