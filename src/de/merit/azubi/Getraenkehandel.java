@@ -1,6 +1,6 @@
 package de.merit.azubi;
 
-public class Getränkehandel {
+public class Getraenkehandel {
 
     public static void main(String[] args) {
 
