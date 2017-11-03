@@ -3,35 +3,48 @@ package de.merit.azubi;
 public class SwitchCaseInt {
 
     public static void main(String[] args){
-        int gewuerfelt;
-        double zufallszahl;
 
 
-        zufallszahl = (Math.random());
+        double zufallszahl_1 = (Math.random());
+        int zahl_1 = (int) (zufallszahl_1 * 6) + 1;
+        double zufallszahl_2 = (Math.random());
+        int zahl_2 = (int) (zufallszahl_2 * 6) + 1;
+
+        int zahl = zahl_1 + zahl_2;
 
 
-
-        gewuerfelt = (int) (zufallszahl * 6) + 1;
-
-        System.out.println(gewuerfelt);
-
-        switch(gewuerfelt){
-            case 1:
+        switch(zahl){
+            case 2:
                 System.out.println("Muss selber trinken!");
                 break;
-            case 2:
+            case 3:
                 System.out.println("Such dir jemanden aus der trinken muss!");
                 break;
-            case 3:
+            case 4:
                 System.out.println("Richtungswechsel");
                 break;
-            case 4:
+            case 5:
                 System.out.println("Alle Frauen müssen trinken!");
                 break;
-            case 5:
+            case 6:
                 System.out.println("Alle Männer müssen trinken!");
                 break;
-            case 6:
+            case 7:
+                System.out.println("Alle müssen trinken!");
+                break;
+            case 8:
+                System.out.println("Alle müssen trinken!");
+                break;
+            case 9:
+                System.out.println("Alle müssen trinken!");
+                break;
+            case 10:
+                System.out.println("Alle müssen trinken!");
+                break;
+            case 11:
+                System.out.println("Alle müssen trinken!");
+                break;
+            case 12:
                 System.out.println("Alle müssen trinken!");
                 break;
 
