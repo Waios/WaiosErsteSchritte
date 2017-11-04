@@ -17,10 +17,7 @@ public class EinmalEins {
                     System.out.println(i + "*" + j + "*" + k + "="  + erg);
 
                 }
-
-
             }
-
         }
     }
 }

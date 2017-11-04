@@ -17,10 +17,8 @@ public class Sortieren {
                     arr[stelle - 1] = arr[stelle];
                     arr[stelle] = zwischenspeicher;
 
-
                 }
             }
-
         }
     }
 

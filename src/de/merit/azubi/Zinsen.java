@@ -31,15 +31,12 @@ public class Zinsen {
                     System.out.println("Einzahlung monatlich: " + monatlicheZahlung + " " + "Gesamter Betrag: " + summe);
 
                 }
-
             }
             summe = summe * zinssatz[jahr];
             summe = Math.round(100.0 * summe) / 100.0;
 
             System.out.println("Einzahlung jährlich zuzüglich Zinsen:  " + (jahr + 1) + " Jahre  " + summe + " € ");
 
-
         }
-
     }
 }

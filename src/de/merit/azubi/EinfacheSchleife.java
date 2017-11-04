@@ -9,10 +9,8 @@ public class EinfacheSchleife {
             summe = summe + i;
 
             System.out.println(i);
-
-
-
         }
+
         System.out.println("Endsumme:"+ summe);
     }
 }

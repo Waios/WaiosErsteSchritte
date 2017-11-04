@@ -16,7 +16,6 @@ public class ZahlenRegal {
                     arr[s] = a;
                 }
             }
-
     }
 
     static void printarray(int[] einArray) {
@@ -49,8 +48,6 @@ public class ZahlenRegal {
 
         printarray(wandregal);
     }
-
-
 }
 
 

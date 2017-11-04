@@ -30,13 +30,11 @@ public class Wiederholung {
                     System.out.println("Monatliches Gehalt: " + monatsgehalt + " " + "Gesamter Betrag: " + ergebniss);
 
                 }
-
             }
             ergebniss = ergebniss * zinssatz[jahr];
             ergebniss = Math.round(100.0 * ergebniss) / 100.0;
 
             System.out.println("Gehalt jährlich zuzüglich Zinsen:  " + (jahr + 1) + " Jahre  " + ergebniss + " € ");
-
 
         }
     }

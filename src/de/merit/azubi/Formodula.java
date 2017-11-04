@@ -15,7 +15,6 @@ public class Formodula {
             if (i % 5 == 0 ) {
                 System.out.println("Die Zahl: " + i + " ist durch 5 teilbar.");
             }
-
         }
     }
 }

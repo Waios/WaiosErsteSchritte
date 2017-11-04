@@ -33,6 +33,5 @@ public class Getraenkehandel {
             System.out.println("Das macht dann " + einkauf + " € bitte");
 
         }
-
     }
 }

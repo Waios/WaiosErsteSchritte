@@ -23,7 +23,6 @@ public class SortierenMethode1 {
 
                 System.out.println(teams[zeile] [position]);
 
-
             }
         }
 

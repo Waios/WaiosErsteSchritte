@@ -30,7 +30,6 @@ public class WdhZinsen {
                     System.out.println("Einzahlung monatlich: " + monatlicheZahlung + " " + "Gesamter Betrag: " + summe);
 
                 }
-
             }
             summe = summe * zinssatz[jahr];
             summe = Math.round(100.0 * summe) / 100.0;
@@ -39,5 +38,4 @@ public class WdhZinsen {
 
         }
     }
-
 }

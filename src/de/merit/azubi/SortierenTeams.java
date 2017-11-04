@@ -14,10 +14,9 @@ public class SortierenTeams {
 
         for (String[] dim1 : teams) {
             for (String member : dim1) {
-                System.out.println("Member: " + member);
+                System.out.println ("Member: " + member);
 
             }
-
         }
 
         String[][] team = new String[3][5];
@@ -41,23 +40,22 @@ public class SortierenTeams {
         team[2][4] = "Paul";
 
         for (int zeile = 0; zeile < 4; zeile++) {
-            System.out.println("}\nTeam " + zeile);
+            System.out.println ("}\nTeam " + zeile);
 
             for (int zaehler = 0; zaehler < teams[zeile].length; zaehler++) {
 
                 for (int position = 1; position < (teams[zeile].length - zaehler); position++) {
-                    if ((teams[zeile][position]).compareTo(teams[zeile][position - 1]) < 0) {
+                    if ((teams[zeile][position]).compareTo (teams[zeile][position - 1]) < 0) {
                         String temp = teams[zeile][position - 1];
                         teams[zeile][position - 1] = teams[zeile][position];
                         teams[zeile][position] = temp;
                     }
+                }
 
+                for (int x = 0; x < teams[zeile].length; x++) {
+                    System.out.println (teams[zeile][x]);
                 }
             }
-            for (int x = 0; x < teams[zeile].length; x++) {
-                System.out.println(teams[zeile][x]);
-            }
-
         }
     }
 }

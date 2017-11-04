@@ -2,7 +2,7 @@ package de.merit.azubi;
 
 public class Test{
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         System.out.println("Es war einmal ein Lattenzaun");
         System.out.println("mit Zwischenraum, hindurchzuschaun");
@@ -12,19 +12,11 @@ public class Test{
         System.out.println();
         System.out.println("und nahm den Zwischenraum heraus");
         System.out.println("und baute draus ein grosses Haus.");
+
     }
 }
 
-class Hello
-{
-    public static void main ( String[] args )
-    {
-        System.out.println("Hello World!");
-    }
-}
-
-class Schleife{
 
 
 
-}
+

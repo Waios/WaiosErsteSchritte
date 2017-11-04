@@ -12,9 +12,7 @@ public class AufgabeForschleife {
             if (i % 7 == 0) {
                 System.out.println("Die Zahl: " + i + " ist durch 7 teilbar.");
             }
-
         }
-
     }
 }
 
