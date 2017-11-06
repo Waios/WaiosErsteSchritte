@@ -1,6 +1,6 @@
 package de.merit.azubi;
 
-public class Durschnittsverbrauch {
+public class Durchschnittsverbrauch {
 
     public static void main(String[] args) {
 
