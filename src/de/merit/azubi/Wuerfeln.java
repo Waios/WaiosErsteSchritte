@@ -1,14 +1,12 @@
 package de.merit.azubi;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 public class Wuerfeln {
 
     public static void main(String[] args) {
 
 
         int i = 0;
-        double zufallszahl = 0;
+        double zufallszahl;
         int gewuerfelt = 0;
 
         while (gewuerfelt != 6) {

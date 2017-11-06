@@ -2,13 +2,14 @@ package de.merit.azubi;
 
 public class Durschnittsverbrauch {
 
-    int gefKm = 430;
-    int verbrauchL = 38;
+    public static void main(String[] args) {
 
-    double erg = verbrauchL / gefKm * 100;
+        int gefKm = 430;
+        int verbrauchL = 38;
 
+        double erg = verbrauchL / gefKm * 100;
 
+        System.out.println (erg);
 
-
-
+    }
 }
