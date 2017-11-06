@@ -17,6 +17,7 @@ public class EinfacheIfElseAnweisung {
             int erg = hans + fritz;
 
             System.out.println("Zusammen sind sie  "+erg+ " Jahre alt");
+
         }
     }
 }

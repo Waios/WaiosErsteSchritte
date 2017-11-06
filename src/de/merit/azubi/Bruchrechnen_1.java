@@ -13,5 +13,6 @@ public class Bruchrechnen_1 {
         a.ausgeben();
         a.erweitern();
         a.alsKommazahl();
+
     }
 }
