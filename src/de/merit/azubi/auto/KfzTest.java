@@ -3,8 +3,7 @@ package de.merit.azubi.auto;
 import org.junit.Test;
 
 import java.text.ParseException;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.LocalDate;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -12,16 +11,18 @@ import static org.junit.Assert.assertNotNull;
 public class KfzTest {
 
 
+    private final LocalDate baujahr = LocalDate.of(2010,1,1);
+
     @Test
     public void initTest() {
-        Kfz emilysAuto = new Kfz(new GregorianCalendar() , "DA-RR 1024", "Suzuki");
+        Kfz emilysAuto = new Kfz(LocalDate.now() , "DA-RR 1024", "Suzuki");
         assertEquals("Emily", emilysAuto.getBesitzer());
 
-        Kfz einAuto = new Kfz(new GregorianCalendar() , "DA-RR 1024", "Suzuki", "MeRIT");
+        Kfz einAuto = new Kfz(LocalDate.now() , "DA-RR 1024", "Suzuki", "MeRIT");
 
         assertNotNull(einAuto);
 
-        Kfz nochEinAuto = new Kfz(new GregorianCalendar() , "DA-RR 2048", "VW", "MeRIT");
+        Kfz nochEinAuto = new Kfz(LocalDate.now() , "DA-RR 2048", "VW", "MeRIT");
         assertNotNull(nochEinAuto);
 
         System.out.println(einAuto);
@@ -32,11 +33,7 @@ public class KfzTest {
     public void initWithDateTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
-
-
-
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
        assertEquals(2010, einAuto.getBaujahr());
        System.out.println(einAuto);
 
@@ -50,9 +47,7 @@ public class KfzTest {
     public void evalKmTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
-
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
         assertEquals(new Integer(0), einAuto.getKm());
 
         einAuto.setKm(99000);
@@ -60,13 +55,12 @@ public class KfzTest {
 
 
     }
+
     @Test
     public void evalZulassungTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
-
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
         //einAuto.setZulassung("20100606");
         einAuto.setZulassung(2010, 07, 06);
         assertEquals("20100706", einAuto.getZulassung());
@@ -79,22 +73,21 @@ public class KfzTest {
     public void evalTuevTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
 
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
         einAuto.setTuev(2015, 04);
         assertEquals("201504", einAuto.getTuev());
 
 
 
     }
+
     @Test
     public void zulassungInitTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
 
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
 
         einAuto.setZulassung(2010, 07, 06);
         assertEquals("20100706", einAuto.getZulassung());
@@ -108,9 +101,7 @@ public class KfzTest {
     public void zulassungTuevTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
-
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
 
         einAuto.setZulassung(2010, 07, 06);
         assertEquals("20100706", einAuto.getZulassung());
@@ -125,12 +116,24 @@ public class KfzTest {
     public void farbenTest() throws ParseException {
 
 
-        Calendar jahr = new GregorianCalendar(2010,1,1,0,0,0);
-
-        Kfz einAuto = new Kfz(jahr, "DA-RR 1024", "Suzuki", "Waios");
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
 
         einAuto.setFarbe("schwarz");
         assertEquals("schwarz", einAuto.getfarbe());
+
+
+
+
+    }
+
+    @Test
+    public void kiloWattTest() throws ParseException {
+
+
+        Kfz einAuto = new Kfz(baujahr, "DA-RR 1024", "Suzuki", "Waios");
+
+        einAuto.setkiloWatt(90);
+        assertEquals(90 , einAuto.getkiloWatt());
 
 
 
